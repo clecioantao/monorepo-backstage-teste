@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: authorizer-app2
+  tags:
+    - dotnet
+    - microservice
+  annotations:
+    backstage.io/kubernetes-id: "c4-shared-vpcs-prd-priv-02"
+    backstage.io/techdocs-ref: "https://backstage.cloud.carrefour.com.br/"
+    lighthouse.com/website-url: "https://backstage.cloud.carrefour.com.br/"
+spec:
+  type: service
+  lifecycle: production
+  owner: authorizer-team
+  system: authorization

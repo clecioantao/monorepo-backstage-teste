@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: authorizer-app3
+spec:
+  type: openapi
+  lifecycle: production
+  owner: authorizer-team
+  system: authorization
+  definition:
+    $text: ./openapi.json

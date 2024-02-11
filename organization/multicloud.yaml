@@ -1,0 +1,81 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: multicloud
+  description: MultiCloud
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: team-a@example.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: infraestrutura
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: clecio_antao_ext
+spec:
+  profile:
+    displayName: Clecio Antao
+    email: clecio_antao_ext@carrefour.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [infraestrutura]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jean_pontes
+spec:
+  profile:
+    displayName: Jean Pontes
+    email: jean_pontes@carrefour.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Leo&backgroundColor=transparent
+  memberOf: [infraestrutura]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: victor_braga
+spec:
+  profile:
+    displayName: Victor Braga
+    email: victor_braga@carrefour.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Midnight&backgroundColor=transparent
+  memberOf: [infraestrutura]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: juan_miranda
+spec:
+  profile:
+    displayName: Juan Miranda
+    email: juan_miranda@carrefour.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Midnight&backgroundColor=transparent
+  memberOf: [infraestrutura]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: rodrigo_arruda
+spec:
+  profile:
+    displayName: Rodrigo Arruda
+    email: rodrigo_arruda@carrefour.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [infraestrutura]
+---
+# This user is added as an example, to make it more easy for the "Guest"
+# sign-in option to demonstrate some entities being owned. In a regular org,
+# a guest user would probably not be registered like this.
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+spec:
+  profile:
+    displayName: Guest User
+    email: guest@example.com
+  memberOf: [infraestrutura]

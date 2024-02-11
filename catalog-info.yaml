@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: authorization-monorepo-data
+spec:
+  targets:
+    - /domain/catalog-info.yaml
+    - /system/catalog-info.yaml
+    - /group/catalog-info.yaml
+    - /app1/catalog-info.yaml
+    - /app2/catalog-info.yaml
+    - /app3/catalog-info.yaml
+    - /organization/org.yaml

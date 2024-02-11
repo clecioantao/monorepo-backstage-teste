@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: carrefour-corp
+  description: The Carrefour organization
+  links:
+    - url: http://www.carrefour.com.br/
+      title: Portal
+spec:
+  type: organization
+  profile:
+    displayName: Carrefour Corp
+    email: clecio_antao@carrefour.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Maggie&flip=true&backgroundColor=ffdfbf
+  children: [infrastructure]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: montagem-grupos
+  description: Examplo e teste para montagem de grupos
+spec:
+  targets:
+    - tech.yaml
+    - infraestrutura.yaml
+    - multicloud.yaml
+    - network.yaml
+ 

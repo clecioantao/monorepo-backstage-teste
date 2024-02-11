@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: tech
+  description: The Tech department
+spec:
+  type: department
+  # Intentional no profile for testing
+  parent: carrefour-corp
+  children: [infraestrutura]
